@@ -22,7 +22,9 @@ public class Consumidor extends Usuario implements Irenovable{
     }
 
     public void cerrarTramite(AtomicInteger nTramite){
-       System.out.println("Tramite "+ nTramite+" finalizado");
+       System.out.println("[Tramite N°"+ nTramite+" finalizado]");
+       System.out.println();
+
        
     }
     private void solicitarSustancia(Tramite tramite){

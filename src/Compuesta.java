@@ -3,8 +3,8 @@ import java.util.Vector;
 public class Compuesta extends Sustancia{
     private Vector<Simple>composicion;
 
-    public Compuesta(String nombre, String composicion, Double pureza, int cantidad) {
-        super(nombre, composicion, pureza, cantidad);
+    public Compuesta(String nombre, String composicion, Double pureza, int cantidad, double precio) {
+        super(nombre, composicion, pureza, cantidad, precio);
         this.composicion = new Vector<Simple>();
     }
 

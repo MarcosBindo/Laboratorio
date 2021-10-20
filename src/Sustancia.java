@@ -1,10 +1,12 @@
 public class Sustancia {
     private String nombre, formula;
-    private double pureza;
+    private double pureza, precio;
     private int cantidad;
 
 
-    public Sustancia(String nombre, String formula, Double pureza, int cantidad){
+
+    public Sustancia(String nombre, String formula, Double pureza, int cantidad, double precio){
+        this.precio= precio;
         this.nombre = nombre;
         this.formula = formula;
         this.pureza = pureza; 
@@ -25,6 +27,12 @@ public class Sustancia {
 
    public int getCantidad() {
        return cantidad;
+   }
+   public double getPrecio() {
+       return precio;
+   }
+   public void setPrecio(double precio) {
+       this.precio = precio;
    }
    public void setCantidad(int cantidad) {
        this.cantidad = cantidad;

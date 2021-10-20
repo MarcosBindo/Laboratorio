@@ -7,7 +7,7 @@ public class Tramite {
     private Date fecha;
     private Productor productor;
     private Sustancia sustancia;
-    private Double montoTotal;
+    private double montoTotal;
 
     public Tramite(Date fecha, Sustancia sustancia, int cantidad, Productor productor){
         this.fecha = new Date();
@@ -36,7 +36,7 @@ public class Tramite {
     public int getnTramite() {
         return nTramite;
     }
-    public Double getMontoTotal() {
+    public double getMontoTotal() {
         return montoTotal;
     }
     public void setCantidad(int cantidad) {
@@ -54,8 +54,10 @@ public class Tramite {
     public void setnTramite(int nTramite) {
         this.nTramite = nTramite;
     }
-    public void setMontoTotal(Double montoTotal) {
+    public void setMontoTotal(double montoTotal) {
         this.montoTotal = montoTotal;
     }    
+
+
     
 }
